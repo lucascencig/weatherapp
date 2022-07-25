@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../estilos/imagenes/pexels-pixabay-41949.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+
+}
+
+
+.search{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+.input{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border-bottom: solid silver 2px;
+    border-right: solid silver 2px;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgba(8, 8, 8, 0.082);
+    backdrop-filter: blur(3px);
+    font-size: 25px;
+}
+.input:focus{
+    background-color: rgba(126, 126, 126, 0.851);
+    color: white;
+}
+.botonBuscar{
+    width: 100px;
+    height: 40px;
+    color: rgba(170, 170, 170, 0.787);
+    outline: none;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba(223, 223, 223, 0.13);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    box-shadow:inset 2px 2px 2px rgb(170, 170, 170);
+}
+.botonBuscar:hover{
+    transform: scale(105%);
+    transition: all 0.5s ease;
+    box-shadow:  4px 4px 4px rgb(170, 170, 170);
+    background-color: rgba(223, 223, 223, 0.401);
+}
+
+.botonx{
+    position: relative;
+    top: -20px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(71, 71, 71, 0.787) ;
+    border-radius: 50%;
+    color: black;
+    font-weight: 800;
+    background-color: rgb(126, 3, 3);
+    backdrop-filter: blur(3px);
+    transition: all 0.5s ease;
+
+}
+.botonx:hover{
+    background-color: rgba(255, 0, 0, 0.692);
+    backdrop-filter: blur(2px);
+    transition: all 0.5s ease;
+    transform: scale(110%);
+    border: 1px solid rgba(90, 30, 30, 0.787) ;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    height: 600px;
+    border: 1px solid rgba(167, 164, 164, 0.787) ;
+    border-radius: 20px;
+    background-image: url(../estilos/imagenes/mundo.jpg);
+    backdrop-filter: blur(7px);
+    margin-top: 30px;
+    margin-left: 50px;
+    transition: all 0.2s ease;
+    box-shadow: 12px 10px 37px -15px rgba(255,255,255,0.7);
+    -webkit-box-shadow: 12px 10px 37px -15px rgba(255,255,255,0.7);
+    -moz-box-shadow: 12px 10px 37px -15px rgba(255,255,255,0.7);
+    opacity: 0.95;
+    
+}
+.contenedor:hover {
+    transform: scale(102%) ;
+    transition: all 0.2s ease;
+    
+}
+
+.contenedor:before{
+    content: "";
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background: linear-gradient( #ffffff00, #61616180);
+    opacity: 0.3;
+   
+}
+
+.titulo{
+    font-size: 50px;
+    font-family:fantasy;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    letter-spacing: 5px;
+    z-index: 2;
+
+    
+}
+
+
+.tituloMin{
+    margin-top: 0px;
+    color: rgb(183, 200, 245);
+    text-shadow: 5px 5px 3px rgba(25, 25, 25, 0.763);
+   
+}
+.tituloMax{
+    color: rgb(232, 59, 59);
+    text-shadow: 5px 5px 3px rgba(116, 116, 116, 0.30);
+    
+}
+
+.pmin{
+    font-size: 40px;
+}
+.pmintemp{
+    font-size: 30px;
+}
+.pmax{
+    font-size: 40px;
+}
+.pmaxtemp{
+    font-size: 30px;
+}
+
+
